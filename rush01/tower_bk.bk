@@ -1,0 +1,102 @@
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main (int argc, char *argv[])
+{
+	char arr_up[4];
+	char arr_down[4];
+	char arr_right[4];
+	char arr_left[4];
+	char a;
+	char b;
+	int i;
+	int pos;
+	char p;
+
+	if (argc > 0 )
+	{
+/*		printf("ok\n");
+		printf("000000000011111111112222222222333\n");
+		printf("012345678901234567890123456789012\n");
+		printf("%s \n", argv[1]);
+*/
+		i=0;
+		while (i < (16*2))
+		{
+			p = argv[1][i];
+			if (p < '1' || p > '4')
+			{
+				printf ("Error");
+				return(1);
+			}
+			//anadir al array up
+			if (i >=0 && i <=6)
+			{
+				pos = (i/2);
+				printf ("%d-%c\n", pos, p);
+				arr_up[pos]= p;
+			}
+
+			//anadir al array down
+			if (i >=8 && i <=14)
+			{
+				pos = (i/2)-4;
+				printf ("%d-%c\n", pos, p);
+				arr_down[pos]= p;
+			}
+
+			//anadir al array right
+			if (i >=16 && i <=22)
+			{
+				pos = (i/2)-8;
+				printf ("%d-%c\n", pos, p);
+				arr_right[pos]= p;
+			}
+
+			//anadir al array left
+			if (i >=24 && i <=30)
+			{
+				pos = (i/2)-12;
+				printf ("%d-%c\n", pos, p);
+				arr_left[pos]= p;
+			}
+			i=i+2;
+		}
+	}
+	else 
+	{
+		printf("no se han pasado parametros\n");
+	}
+
+	i=0;
+	while (i<4)
+	{
+		printf("Up:");
+		printf("%d %c \n", i, arr_up[i]);
+		i++;
+	}
+	i=0;
+	while (i<4)
+	{
+		printf("down:");
+		printf("%d %c \n", i, arr_down[i]);
+		i++;
+	}
+	i=0;
+	while (i<4)
+	{
+		printf("Right:");
+		printf("%d %c \n", i, arr_right[i]);
+		i++;
+	}
+	i=0;
+	while (i<4)
+	{
+		printf("Left:");
+		printf("%d %c \n", i, arr_left[i]);
+		i++;
+	}
+	return(0);
+}
