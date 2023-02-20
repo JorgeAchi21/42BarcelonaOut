@@ -5,11 +5,11 @@
 
 int main (int argc, char *argv[])
 {
-	char arr_matrix[4][4];
-	char arr_up[4];
-	char arr_down[4];
-	char arr_right[4];
-	char arr_left[4];
+	char	arr_matrix[4][4];
+	char	arr_up[4];
+	char	arr_down[4];
+	char	arr_right[4];
+	char	arr_left[4];
 
 	int i;
 	int pos;
@@ -34,6 +34,7 @@ int main (int argc, char *argv[])
 	if (argc > 0 )
 	{
 /*		printf("ok\n");
+		printf("          |         |         |  \n");
 		printf("000000000011111111112222222222333\n");
 		printf("012345678901234567890123456789012\n");
 		printf("%s \n", argv[1]);
