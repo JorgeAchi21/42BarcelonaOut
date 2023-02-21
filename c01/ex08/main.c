@@ -1,33 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jachiaga <jachiaga@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/17 09:09:46 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/17 14:18:16 by jachiaga         ###   ########.fr       */
+/*   Created: 2023/02/21 08:50:26 by jachiaga          #+#    #+#             */
+/*   Updated: 2023/02/21 16:16:52 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
-#include <unistd.h>
+void ft_sort_int_tab(int *tab, int size);
 
-void ft_ft (int *p)
+int	main(void)
 {
-	write (1,*p,1);
+	int tamano;
+	int *ptr;
+	
+	tamano = 15;
+	int  str[15]= {1,11,2,10,3,9,4,8,5,7,6,3,14,20};
+	ptr = &str[0];
+
+	ft_sort_int_tab(ptr, tamano);
 	return (0);
 }
-
-int main (void)
-{
-	int var;
-	int p;
-
-	int = 42;
-	p = &var;
-	ft_ft(p);
-	return(0);
-
-	
-}	
-
