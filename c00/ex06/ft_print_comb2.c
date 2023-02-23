@@ -6,7 +6,7 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 15:07:01 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/15 09:21:57 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 08:50:19 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ void ft_print_digit (int a)
 	}
 }
 
-void ft_print_comb2 ()
+void ft_print_comb2()
 {
 	int a;
 	int b;
 	char carac;
-	
+
 	a = 0;
 	while (a < 100)
 	{

@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
+/*   By: jachiaga <jachiaga@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/13 14:45:08 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/23 08:49:11 by jachiaga         ###   ########.fr       */
+/*   Created: 2023/02/22 10:26:39 by jachiaga          #+#    #+#             */
+/*   Updated: 2023/02/22 15:59:14 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
-#include	<unistd.h>
-
-void ft_is_negative(int number)
+int ft_str_size()
 {
-	if (number >= 0 )
-	{
-		write(1, "P", 1);
-	}
-	else
-	{
-		write(1, "N", 1);
-	}
+	return(5);
 }
 
-int	main(void)
+char *ft_strcpy(char *dest, char *src)
 {
-	ft_is_negative(35);
-	return (0);
+	int i;
+	i = 0;
+	while (src[i] != '\0')
+	{
+		//printf("%d-", src[i]);
+		dest[i]=src[i];
+		i++;
+	}
+	return(0);
 }

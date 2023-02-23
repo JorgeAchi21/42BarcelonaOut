@@ -1,31 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
+/*   By: jachiaga <jachiaga@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/13 14:45:08 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/23 08:49:11 by jachiaga         ###   ########.fr       */
+/*   Created: 2023/02/22 17:49:35 by jachiaga          #+#    #+#             */
+/*   Updated: 2023/02/22 18:47:22 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
-#include	<unistd.h>
-
-void ft_is_negative(int number)
+int ft_str_is_lowercase(char *str)
 {
-	if (number >= 0 )
-	{
-		write(1, "P", 1);
-	}
-	else
-	{
-		write(1, "N", 1);
-	}
-}
+	int i;
+	int out;
 
-int	main(void)
-{
-	ft_is_negative(35);
-	return (0);
+	i = 0;
+	out = 1;
+	while (str[i] != '\0')
+	{
+		if (str[i]>='a' && str[i]<='z')
+		{
+			printf(".");	
+		}	
+		else
+		{
+			printf("+");
+			out = 0;
+		}	
+		i++;
+	}
+	return(out);
 }

@@ -6,7 +6,7 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 14:31:18 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/13 14:42:08 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 08:47:59 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void ft_print_numbers ()
 {
-	int i;
-	char carac;
-	
+	int	i;
+	char	carac;
+
 	i = 48;
 	while (i < 58){
 		carac = i ;

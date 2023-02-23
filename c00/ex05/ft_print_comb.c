@@ -6,7 +6,7 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 14:54:13 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/13 17:28:54 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 08:49:58 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void ft_print (int a, int b, int c)
 {
 	char	carac;
+
 	carac = a + 48;
 	write (1, &carac, 1);
 	carac = b + 48;

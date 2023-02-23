@@ -6,18 +6,18 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 14:09:22 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/13 14:13:54 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 08:51:35 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	<unistd.h>
 
-void ft_putchar (char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-int	main (void)
+int	main(void)
 {
 	ft_putchar('a');
 	return (0);
