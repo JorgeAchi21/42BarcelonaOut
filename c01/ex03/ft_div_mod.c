@@ -6,13 +6,12 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 11:46:18 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/20 16:57:32 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 15:20:41 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_div_mod(int a, int b, int *pdiv, int *pmod)
+void	ft_div_mod(int a, int b, int *pdiv, int *pmod)
 {
 	*pdiv = a / b;
 	*pmod = a % b;
 }
-

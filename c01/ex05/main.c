@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jachiaga <jachiaga@student.42barcel>       +#+  +:+       +#+        */
+/*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 17:20:14 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/20 18:23:09 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 15:24:20 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdio.h>
 
 void	ft_putstr(char *str);

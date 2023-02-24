@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/13 14:45:08 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/23 10:03:24 by jachiaga         ###   ########.fr       */
+/*   Created: 2023/02/23 10:44:40 by jachiaga          #+#    #+#             */
+/*   Updated: 2023/02/23 11:41:03 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	<unistd.h>
+#include	<stdio.h>
 
-void	ft_is_negative(int number)
+void	ft_putnbr(int number);
+
+int	main(void)
 {
-	if (number >= 0)
-	{
-		write(1, "P", 1);
-	}
-	else
-	{
-		write(1, "N", 1);
-	}
+	ft_putnbr(-2147483648);
+	return (0);
 }

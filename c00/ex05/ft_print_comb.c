@@ -6,13 +6,13 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 14:54:13 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/23 08:49:58 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 10:19:25 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	<unistd.h>
 
-void ft_print (int a, int b, int c)
+void	ft_print(int a, int b, int c)
 {
 	char	carac;
 
@@ -22,7 +22,8 @@ void ft_print (int a, int b, int c)
 	write (1, &carac, 1);
 	carac = c + 48;
 	write (1, &carac, 1);
-	if (a < 7){
+	if (a < 7)
+	{
 		write (1, ", ", 2);
 	}
 	else
@@ -31,12 +32,12 @@ void ft_print (int a, int b, int c)
 	}
 }
 
-void ft_print_comb (void)
+void	ft_print_comb(void)
 {
 	int	a;
 	int	b;
 	int	c;
-	
+
 	a = 0;
 	while (a < 10)
 	{
@@ -54,10 +55,4 @@ void ft_print_comb (void)
 		}
 		a++;
 	}
-}
-
-int	main (void)
-{
-	ft_print_comb();
-	return (0);
 }

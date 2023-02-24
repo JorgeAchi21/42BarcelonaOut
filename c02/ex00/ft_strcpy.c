@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jachiaga <jachiaga@student.42barcel>       +#+  +:+       +#+        */
+/*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 10:26:39 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/22 15:59:14 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 14:44:14 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
 
 int ft_str_size()
 {
@@ -18,7 +18,7 @@ int ft_str_size()
 
 char *ft_strcpy(char *dest, char *src)
 {
-	int i;
+	int	i;
 	i = 0;
 	while (src[i] != '\0')
 	{

@@ -1,15 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jachiaga <jachiaga@student.42barcel>       +#+  +:+       +#+        */
+/*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/20 11:46:18 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/20 15:52:13 by jachiaga         ###   ########.fr       */
+/*   Created: 2023/02/23 15:19:36 by jachiaga          #+#    #+#             */
+/*   Updated: 2023/02/23 15:19:43 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
+#include	<stdio.h>
 
 void	ft_div_mod(int a, int b, int *div, int *mod);
 

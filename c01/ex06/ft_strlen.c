@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jachiaga <jachiaga@student.42barcel>       +#+  +:+       +#+        */
+/*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 18:31:01 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/20 18:48:56 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 15:30:40 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
+
 	i = 0;
 	while (str[i] != '\0')
 	{
 		i++;
 	}
 	i--;
-	return(i);
+	return (i);
 }
-

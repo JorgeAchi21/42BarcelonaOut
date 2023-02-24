@@ -6,9 +6,11 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 11:46:18 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/20 14:49:33 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 15:10:48 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 void	ft_ultimate_ft(int ********nbr);
 
@@ -36,5 +38,6 @@ int	main(void)
 	//printf ("%d\n", ********pint8);
 
 	ft_ultimate_ft (pint8);
+	printf("variable: %d", ********pint8);
 	return (0);
 }

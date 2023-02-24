@@ -1,25 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_sort_int_tab_depuracion.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/13 14:45:08 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/23 10:03:24 by jachiaga         ###   ########.fr       */
+/*   Created: 2023/02/23 16:03:16 by jachiaga          #+#    #+#             */
+/*   Updated: 2023/02/23 16:16:15 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	<unistd.h>
+#include <unistd.h>
+#include <stdio.h>
 
-void	ft_is_negative(int number)
+void	ft_sort_int_tab(int *tab, int size)
 {
-	if (number >= 0)
+	int	i;
+	int	ii;
+	int	swpg;
+
+	i = 0;
+	ii = 0;
+	while (ii < size - 1)
 	{
-		write(1, "P", 1);
-	}
-	else
-	{
-		write(1, "N", 1);
+		while (i < size - ii - 1)
+		{
+			if (tab[i] > tab[i + 1])
+			{
+				swpg = tab[i];
+				tab[i] = tab[i + 1];
+				tab[i + 1] = swpg;
+				printf("tb: %d-tb+1: %d\n", tab[i], tab[i + 1]);
+			}
+			i++;
+		}
+		printf("----\n");
+		i = 0;
+		ii++;
 	}
 }

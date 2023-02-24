@@ -3,18 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jachiaga <jachiaga@student.42barcel>       +#+  +:+       +#+        */
+/*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 14:55:44 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/20 15:09:04 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 15:14:57 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 
-void ft_swap(int *pa, int *pb)
+#include <unistd.h>
+
+void	ft_swap(int *pa, int *pb)
 {
-	int c;
+	int	c;
+
 	c = *pa;
 	*pa = *pb;
-	*pb =c;	
+	*pb = c;
 }

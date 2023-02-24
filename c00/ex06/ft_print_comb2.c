@@ -6,13 +6,13 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 15:07:01 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/23 08:50:19 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 10:37:16 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	<unistd.h>
 
-void ft_put_int (int num)
+void	ft_put_int(int num)
 {
 	char	charac;
 
@@ -20,10 +20,11 @@ void ft_put_int (int num)
 	write (1, &charac, 1);
 }
 
-void ft_print_digit (int a)
+void	ft_print_digit(int a)
 {
-	int num;
-	char carac;
+	int		num;
+	char	carac;
+
 	if (a < 10)
 	{
 		write (1, "0", 1);
@@ -38,17 +39,18 @@ void ft_print_digit (int a)
 	}
 }
 
-void ft_print_comb2()
+void	ft_print_comb2(void)
 {
-	int a;
-	int b;
-	char carac;
+	int		a;
+	int		b;
+	char	carac;
 
 	a = 0;
 	while (a < 100)
 	{
 		b = a + 1;
-		while (b < 100){
+		while (b < 100)
+		{
 			ft_print_digit(a);
 			write (1, " ", 1);
 			ft_print_digit(b);
@@ -60,15 +62,8 @@ void ft_print_comb2()
 			{
 				write (1, "\n", 1);
 			}
-			b++;	
+			b++;
 		}
 		a++;
 	}
-}
-
-int	main (void)
-{
-	ft_print_comb2();
-	//ft_print_digit(25);
-	return (0);
 }

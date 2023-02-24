@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jachiaga <jachiaga@student.42barcel>       +#+  +:+       +#+        */
+/*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 12:26:14 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/20 14:28:44 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/23 14:55:33 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_ultimate_ft(int ********nbr)
 {
-	nbr = 42;
+	********nbr = 42;
 }
