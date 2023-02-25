@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "out/c00"
+		},
+		{
+			"path": "out/c00/test"
+		}
+	],
+	"settings": {}
+}
