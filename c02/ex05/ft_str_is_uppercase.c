@@ -1,41 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/20 11:46:18 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/27 19:02:42 by jachiaga         ###   ########.fr       */
+/*   Created: 2023/02/27 16:01:46 by jachiaga          #+#    #+#             */
+/*   Updated: 2023/02/27 16:23:15 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+#include <stdio.h>
+
+int ft_str_is_lowercase(char *str)
 {
-	*div = a / b;
-	*mod = a % b;
+	while (*str)
+	{
+		if (*str < 'A' || *str > 'Z')
+			return (0);
+		str++;
+	}
+	return (1);
 }
-
-#include	<stdio.h>
-
-void	ft_div_mod(int a, int b, int *div, int *mod);
 
 int	main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
-	int *div;
-	int *mod;
+	int out;
+	
+	out = 0;
+	//char str[]={"abcdefg"};
+	char str[]={"abcAAAA"};
 
-	a = 38;
-	b = 7;
-
-	div = &c;
-	mod = &d;
-
-	ft_div_mod(a, b, div, mod);
-	printf("%d / %d cociente:%d -resto:%d",a , b, *div, *mod);
-	return (0);
+	out = ft_str_is_lowercase( str );
+	printf("salida  Upper1/Lower0: %i -cadena: %s", out, str);
+	return(0);
 }

@@ -1,41 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/20 11:46:18 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/27 19:02:42 by jachiaga         ###   ########.fr       */
+/*   Created: 2023/02/27 16:33:22 by jachiaga          #+#    #+#             */
+/*   Updated: 2023/02/27 16:41:30 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int *mod)
+#include <stdio.h>
+
+char *ft_strupcase(char *str)
 {
-	*div = a / b;
-	*mod = a % b;
+	while (*str)
+	{
+		if (*str < 'a' && *str > 'z')
+			str = str + ' ';
+		str++;
+	}
+	return (str);
 }
-
-#include	<stdio.h>
-
-void	ft_div_mod(int a, int b, int *div, int *mod);
 
 int	main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
-	int *div;
-	int *mod;
+	char out[];
+	
+	out = 0;
+	char str[]={"abcdaaa"};
+	//char str[]={'\0'};
+	//char str[]={"abcAAAA\t"};
+	//char str[]={"abcAAAA"};
 
-	a = 38;
-	b = 7;
-
-	div = &c;
-	mod = &d;
-
-	ft_div_mod(a, b, div, mod);
-	printf("%d / %d cociente:%d -resto:%d",a , b, *div, *mod);
-	return (0);
+	out = ft_strupcase( str );
+	printf("salida mayusculas: %i -cadena: %s.", out, str);
+	return(0);
 }
