@@ -6,7 +6,7 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 11:32:28 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/28 11:33:31 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/28 15:57:24 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strlowcase(char *str)
 {
 	while (*str)
 	{
-		if (*str < 'a' && *str > 'z')
+		if (*str < 'A' && *str > 'Z')
 			str = str + ' ';
 		str++;
 	}
@@ -25,8 +25,8 @@ char	*ft_strlowcase(char *str)
 
 int	main(void)
 {
-	char out[];
-	
+	char	out[];
+
 	out = 0;
 	char str[]={"abcdaaa"};
 	//char str[]={'\0'};
@@ -35,5 +35,5 @@ int	main(void)
 
 	out = ft_strupcase( str );
 	printf("salida mayusculas: %i -cadena: %s.", out, str);
-	return(0);
+	return (0);
 }

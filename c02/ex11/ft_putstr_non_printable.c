@@ -6,7 +6,7 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 11:40:23 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/28 11:40:46 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/28 16:11:05 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,14 @@ char	ft_putstr_non_printable(char *str)
 int	main(void)
 {
 	char out[];
-	
+
 	out = 0;
-	char str[]={"abcdaaa"};
+	char str[] = {"coucou\ntu vas bien"};
 	//char str[]={'\0'};
 	//char str[]={"abcAAAA\t"};
 	//char str[]={"abcAAAA"};
 
-	out = ft_strupcase( str );
+	out = ft_putstr_non_printable(str);
 	printf("salida mayusculas: %i -cadena: %s.", out, str);
-	return(0);
+	return (0);
 }

@@ -3,26 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jachiaga <jachiaga@student.42barcel>       +#+  +:+       +#+        */
+/*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 17:49:35 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/22 18:47:22 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/28 15:21:36 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 
-int ft_str_is_lowercase(char *str)
+
+#include    <stdio.h>
+
+int	ft_str_is_lowercase(char *str)
 {
-	int i;
-	int out;
+	int	i;
+	int	out;
 
 	i = 0;
 	out = 1;
 	while (str[i] != '\0')
 	{
-		if (str[i]>='a' && str[i]<='z')
+		if (str[i] >='a' && str[i] <= 'z')
 		{
-			printf(".");	
+			printf(".");
 		}	
 		else
 		{
@@ -31,5 +33,19 @@ int ft_str_is_lowercase(char *str)
 		}	
 		i++;
 	}
-	return(out);
+	return (out);
+}
+
+int	main(void)
+{
+	int	salida;
+
+	char	a[15] = {"ABCDEFGHIJ"};
+	char	b[15]={"1234567890"};
+	char	c[16]={"abcdefghij"};
+	char	d[]={};
+
+	salida  = ft_str_is_lowercase(c);
+	printf("car alpha(1minus/0otros): %d-%s", salida, a);
+	return (0);
 }
