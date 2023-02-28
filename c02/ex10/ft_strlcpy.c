@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/20 11:50:39 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/28 09:28:47 by jachiaga         ###   ########.fr       */
+/*   Created: 2023/02/28 11:35:35 by jachiaga          #+#    #+#             */
+/*   Updated: 2023/02/28 11:37:43 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-void	ft_ft(int *nbr)
+
+char	*ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	*nbr = 42;
+	while (*str)
+	{
+		if (*str < 'a' && *str > 'z')
+			str = str + ' ';
+		str++;
+	}
+	return (str);
 }
+
 int	main(void)
 {
-	int	i;
-	i = 2;
-	int	*pint;
+	char out[];
+	
+	out = 0;
+	char str[]={"abcdaaa"};
+	//char str[]={'\0'};
+	//char str[]={"abcAAAA\t"};
+	//char str[]={"abcAAAA"};
 
-	pint = &i;
-	ft_ft (pint);
-	printf(".%d. numero ", i );
-	return (0);
+	out = ft_strupcase( str );
+	printf("salida mayusculas: %i -cadena: %s.", out, str);
+	return(0);
 }

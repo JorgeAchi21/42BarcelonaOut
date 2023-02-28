@@ -6,12 +6,11 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 10:26:39 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/23 14:44:14 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/02/28 12:01:32 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-int ft_str_size()
+int	ft_str_size()
 {
 	return(5);
 }
