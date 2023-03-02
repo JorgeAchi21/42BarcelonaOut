@@ -6,7 +6,7 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 11:35:35 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/02/28 16:09:25 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/03/02 10:22:45 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,47 @@
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	while (*str)
+	unsigned int	i;
+
+	i = 0;
+	if (size > 1)
 	{
-		if (*str < 'a' && *str > 'z')
-			str = str + ' ';
-		str++;
+		while (i < size - 1 && src[i] != '\0')
+		{
+			printf("-i:%i-", i);
+			dest[i] = src[i];
+			i++;
+		}
+		while (i < size)
+		{
+			dest[i] = '\0';
+			i++;
+		}
 	}
-	return (str);
+	i = 0;
+	while (src[i++])
+	{
+	}
+	return (i - 1);
 }
 
 int	main(void)
 {
-	char out[];
+	//concatenar 2 cadenas.
+	unsigned int	out;
 
-	out = 0;
-	char str[]={"abcdaaa"};
+
+	char dest[]={"a2346789a"};
+	char src[]={"b234b"};
 	//char str[]={'\0'};
 	//char str[]={"abcAAAA\t"};
 	//char str[]={"abcAAAA"};
 
-	out = ft_strupcase(str);
-	printf("salida mayusculas.: %i -cadena: %s.\n", out, str);
-	printf("salida funcion ori: %s", strlcpy(str))
+	printf("==ori==");
+	printf("\nDestino.:%s.-origen: %s.", dest, src);
+	out = ft_strlcpy(dest, src, 10);
+	printf("\nDestino.:%s.-origen: %s.-salida:%i", dest, src, out);
+	printf("\nFun std:");
+	printf("\n==fin==");
 	return(0);
 }

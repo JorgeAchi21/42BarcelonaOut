@@ -6,7 +6,7 @@
 /*   By: jachiaga <mentes.egrjoj@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 11:40:23 by jachiaga          #+#    #+#             */
-/*   Updated: 2023/03/01 17:12:28 by jachiaga         ###   ########.fr       */
+/*   Updated: 2023/03/02 09:12:19 by jachiaga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	ft_putstr_non_printable(unsigned char *str)
 
 int	main(void)
 {
-	unsigned char str[] = {"coucou\ntu vas\30 bien\200 ?"};
+	unsigned char str[] = {"coucou\ncon tu vas\30 bien\200 ?"};
 	printf("original: %s.\n", str);
 	//char str[]={'\0'};
 	//char str[]={"abcAAAA\t"};
